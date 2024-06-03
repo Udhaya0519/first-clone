@@ -6,6 +6,13 @@
 body{
     font-family: poppins;
 }
+@media (min-width: 1400px) {
+    body {
+        padding-left: 100px;
+        padding-right: 100px;
+
+    }
+}
 .navbar{
     display: flex;
     align-items: center;
@@ -119,7 +126,8 @@ height: 45px;
 }
 
 .search-container input[type="text"] {
-    width: 500px;
+    width: 720px;
+    height: 50px;
     padding: 10px 20px;
     font-size: 16px;
     border: 1px solid #ddd;
@@ -141,7 +149,7 @@ height: 45px;
 }
 
 .content {
-    background-color: #e1bee7;
+    background-color: #d8dcfc;
     border-radius: 15px;
     padding: 40px;
     display: flex;
@@ -161,17 +169,17 @@ height: 45px;
 .text-content h1 {
     font-size: 48px;
     margin: 0;
-    color: #4a148c;
+    color: #361f4e;
 }
 
 .text-content p {
     font-size: 18px;
-    color: #4a148c;
+    color: #361f4e;
     margin: 20px 0;
 }
 
 .text-content .button {
-    background-color: #4a148c;
+    background-color: #361f4e;
     color: #ffffff;
     padding: 12px 24px;
     text-decoration: none;
@@ -181,7 +189,7 @@ height: 45px;
 }
 
 .text-content .button:hover {
-    background-color: #6a1b9a;
+    background-color: #52327c;
 }
 
 
@@ -221,7 +229,7 @@ height: 45px;
     gap: 20px;
     padding: 0 40px;
     flex-wrap: wrap;
-    margin-bottom: 70px;
+    margin-bottom: 120px;
 }
 
 .hotel-card {
@@ -284,9 +292,11 @@ height: 45px;
 
 
 footer {
-    background-color: #f8f8f8;
+    background-color: #faf1ed;
+    width: 100%;
     padding: 40px 20px;
     font-size: 14px;
+    border-radius: 20px;
 }
 
 .footer-container {
