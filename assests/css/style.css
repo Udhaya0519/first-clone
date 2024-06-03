@@ -1,0 +1,433 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: poppins;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding-top: 18px;
+    padding-left: 18px;
+}
+nav {
+    flex: 11;
+    text-align: center;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+.container{
+    margin: auto;
+}
+nav ul li{
+    display: inline-block;
+    margin: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.sign in button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-in-button {
+    padding: 12px 17px;
+    border: none;
+    background-color: #010810;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: background-color 0.3s;
+}
+
+.sign-in-button:hover {
+    background-color: rgba(0, 0, 0, 0.845);
+}
+.inr-button{
+display: inline-block;
+background: white;
+color: black;
+padding: 12px 22px;
+border-radius: 30px;
+margin-right: 5px;
+transition: background  0.3s;
+width: 70px;
+height: 45px;
+}
+.inr-button:hover{
+  background: rgba(0, 0, 0, 0.084);
+}
+.whereto h1{
+    color: black;
+    font-family: sans-serif;
+    font-weight: 1000;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    font-size: 50px;
+}
+.whereto h1 {
+    display: none;
+}
+@media (min-width: 770px) {
+    .whereto h1 {
+        display: block;
+    }
+}
+.second-navbar {
+    flex: 1;
+    text-align: center;
+    padding: 30px;
+    background-color: #fff; /* Optional background color */
+    font-weight: 500; /* Optional font family */
+    gap: 30px; /* Space between navigation items */
+
+}
+.second-navbar a {
+    text-decoration: none;
+     /* Make the text bold */
+    padding: 10px;
+    position: relative; /* For the underline effect */
+}
+.second-navbar a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: width .3s;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.second-navbar a:hover::after {
+    width: 100%;
+}
+.search-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.search-container input[type="text"] {
+    width: 500px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-container input[type="text"]::placeholder {
+    color: #bbb;
+}
+.small-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #d1c4e9);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content {
+    background-color: #e1bee7;
+    border-radius: 15px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-content {
+    max-width: 400px;
+}
+
+.text-content span{
+    background-color: white;
+    font-family: reddit sans;
+    font-weight: 800;
+}
+.text-content h1 {
+    font-size: 48px;
+    margin: 0;
+    color: #4a148c;
+}
+
+.text-content p {
+    font-size: 18px;
+    color: #4a148c;
+    margin: 20px 0;
+}
+
+.text-content .button {
+    background-color: #4a148c;
+    color: #ffffff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 25px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.text-content .button:hover {
+    background-color: #6a1b9a;
+}
+
+
+.phone-image img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+/*hotel card*/
+
+.section-title {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.section-subtitle {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: #777;
+}
+
+.hotels-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 40px;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+}
+
+.hotel-card {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.hotel-card:hover {
+    transform: scale(1.05);
+}
+
+.hotel-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.hotel-card .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.244);
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.arrow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow-button {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.arrow-button:hover {
+    background-color: #f0f0f0;
+}
+
+
+/*footer*/
+
+
+
+footer {
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.footer-bottom-left img{
+    float: left;
+    margin-right: 10px;
+}
+
+.footer-bottom-left {
+    flex: 1;
+    min-width: 300px;
+    margin-bottom: 20px;
+}
+
+.footer-bottom-left p {
+    margin: 10px 0;
+}
+
+.footer-bottom-left ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-bottom-left ul li {
+    margin-right: 15px;
+}
+
+.footer-bottom-left ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-bottom-left ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom-left h6{
+    font-weight: 400;
+    font-style: normal;
+}
+
+.footer-bottom-right {
+    display: flex;
+    align-items: center;
+}
+
+.footer-bottom-right select {
+    margin-right: 15px;
+    padding: 5px;
+    border-radius: 10px;
+    width: 150px;
+    height: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.footer-bottom-right select:hover{
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.044);
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons a {
+    margin-right: 15px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+
+    .footer-bottom-right {
+        margin-top: 20px;
+    }
+}
+ 
+
+/* disappearing navbar */
+
+
+
+/* Media query to hide navbar items below 800px */
+@media screen and (max-width: 800px) {
+    nav ul {
+        display: none;
+    }
+}
