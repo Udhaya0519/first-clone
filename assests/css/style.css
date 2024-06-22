@@ -427,9 +427,18 @@ footer {
 
     .footer-bottom {
         flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-bottom-left {
+        width: 100%; /* Take full width to maintain left alignment */
+        text-align: left; /* Ensure text stays left-aligned */
     }
 
     .footer-bottom-right {
+        width: 100%; /* Take full width for the right section too */
+        display: flex;
+        justify-content: space-between; /* Spread out the items (select and social icons) */
         margin-top: 20px;
     }
 }
